@@ -112,6 +112,18 @@
         "熱血"
       ],
       "updatedAt": "2026-10-20"
+    },
+    {
+      "id": "w-mvghm3ajrsx5",
+      "title": "RX-78-2",
+      "type": "模型",
+      "note": "2D塗裝到一半，拜託不要爛尾",
+      "series": "EG",
+      "status": "playing",
+      "tags": [
+        "熱血"
+      ],
+      "updatedAt": "2026-10-20"
     }
   ]
 }
