@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+data/
+_incoming/
+public/data/works.backup.json
+*.local
+.DS_Store

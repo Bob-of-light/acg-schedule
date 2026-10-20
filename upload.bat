@@ -1,0 +1,101 @@
+@echo off
+setlocal enabledelayedexpansion
+cd /d "%~dp0"
+
+echo ============================================
+echo    一鍵上傳更新到 GitHub
+echo ============================================
+echo.
+
+echo  [1/4] 檢查建置...
+call npm run build
+if %errorlevel% neq 0 goto :failBuild
+echo      建置沒有錯誤。
+
+echo.
+echo  [2/4] 儲存本機變更...
+git add -A
+set "HASCHANGE="
+git diff --cached --quiet
+if errorlevel 1 set "HASCHANGE=1"
+
+if defined HASCHANGE goto :hasChange
+echo      本機沒有需要儲存的變更。
+goto :sync
+
+:hasChange
+echo      有檔案變更。
+echo.
+set /p "MSG=請描述這次更新（直接按 Enter 用今天的時間）："
+if "%MSG%"=="" set "MSG=更新 %DATE% %TIME:~0,5%"
+git commit -m "%MSG%"
+if %errorlevel% neq 0 goto :failCommit
+echo      已儲存。
+
+:sync
+echo.
+echo  [3/4] 抓取線上最新內容...
+echo      （你在網頁上編輯過的作品也會一起帶回來）
+git fetch origin
+if %errorlevel% neq 0 goto :failFetch
+git rebase origin/main
+if %errorlevel% neq 0 goto :failRebase
+echo      本機與線上已同步。
+
+echo.
+echo  [4/4] 上傳到 GitHub...
+set "FORCE="
+if not exist "%~dp0.git\push-done" set "FORCE=--force"
+git push %FORCE% origin master:main
+if %errorlevel% neq 0 goto :failPush
+if not exist "%~dp0.git\push-done" echo.> "%~dp0.git\push-done"
+
+echo.
+echo ============================================
+echo    上傳完成！等 1~2 分鐘就會自動部署。
+echo.
+echo    看網站  https://bob-of-light.github.io/acg-schedule/
+echo    看進度  https://github.com/bob-of-light/acg-schedule/actions
+echo ============================================
+goto :end
+
+:failBuild
+echo.
+echo    建置失敗，請先修正錯誤後再上傳。
+goto :end
+
+:failCommit
+echo.
+echo    儲存變更失敗。
+goto :end
+
+:failFetch
+echo.
+echo    無法連線到 GitHub，請確認網路或重新登入。
+goto :end
+
+:failRebase
+echo.
+echo    本機和線上的資料打架了（多半是同一部作品兩邊都改過）。
+echo    這個畫面請截圖給我，資料沒有損壞。
+echo    若畫面停在 rebasing 狀態，執行這個指令即可復原：
+echo        git rebase --abort
+goto :end
+
+:failPush
+echo.
+echo    上傳失敗。常見原因：
+echo.
+echo      1. 第一次執行：瀏覽器會跳出視窗請你登入，
+echo         請確認用 Bob-of-light 帳號登入並授權，
+echo         授權完再執行一次這個檔案。
+echo.
+echo      2. 如果跳出的是別的帳號，請到
+echo         Settings - Developer settings - Personal access tokens
+echo         或改用 git push 手動登入。
+goto :end
+
+:end
+echo.
+pause
+endlocal
