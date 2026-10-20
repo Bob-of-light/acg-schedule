@@ -114,6 +114,8 @@ npm install
 
 網址：<https://bob-of-light.github.io/acg-schedule/>
 
+線上寫入 API：<https://acg-schedule.vercel.app>
+
 `vite.config.ts` 的 `base` 與 `server/server.mjs` 的 `BASE` 必須一致，
 改倉庫名稱時兩個地方都要跟著改。
 
