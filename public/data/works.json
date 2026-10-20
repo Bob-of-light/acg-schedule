@@ -18,7 +18,8 @@
     "必看",
     "2026",
     "限定",
-    "朋友推薦"
+    "朋友推薦",
+    "有難"
   ],
   "works": [
     {
@@ -59,7 +60,9 @@
       "type": "電玩",
       "platform": "PS5",
       "status": "want",
-      "tags": [],
+      "tags": [
+        "有難"
+      ],
       "note": "看起來要重打一次直昇機了",
       "url": "https://www.playstation.com/zh-hant-tw/games/armored-core-6-fires-of-rubicon/",
       "updatedAt": "2026-10-20"
