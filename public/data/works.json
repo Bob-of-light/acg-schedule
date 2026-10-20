@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-20T00:00:00.000Z",
+  "types": ["動畫", "電玩", "漫畫", "小說"],
+  "platforms": ["Netflix", "Steam"],
+  "tags": ["熱血", "必看", "2026", "限定", "朋友推薦"],
+  "works": [
+    {
+      "id": "w-aoj-1",
+      "title": "進擊的巨人 第1季",
+      "titleOriginal": "進撃の巨人",
+      "type": "動畫",
+      "platform": "Netflix",
+      "series": "進擊の巨人",
+      "status": "done",
+      "tags": ["熱血", "必看"],
+      "note": "第一次看的世界觀作品。有生之年都要重看一次，記一下免得忘記第四季到底結局是什麼。",
+      "url": "https://www.netflix.com/title/80057239",
+      "cover": "",
+      "updatedAt": "2026-10-20"
+    },
+    {
+      "id": "w-aoj-4",
+      "title": "進擊的巨人 第4季",
+      "titleOriginal": "進撃の巨人 The Final Season",
+      "type": "動畫",
+      "platform": "Netflix",
+      "series": "進擊的巨人",
+      "status": "want",
+      "tags": ["熱血", "2026"],
+      "note": "看完前三季才追。前幾季的伏筆要一起回想，所以先不急。",
+      "url": "",
+      "cover": "",
+      "updatedAt": "2026-10-20"
+    },
+    {
+      "id": "w-sp-1",
+      "title": "超級溫泉大飯店",
+      "titleOriginal": "スーパーポテト",
+      "type": "電玩",
+      "platform": "Steam",
+      "status": "want",
+      "tags": ["限定", "朋友推薦"],
+      "note": "老闆說這裡有初代限定版，記一下免得下次找不到。",
+      "url": "",
+      "cover": "",
+      "updatedAt": "2026-10-20"
+    }
+  ]
+}

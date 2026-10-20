@@ -1,7 +1,8 @@
 node_modules/
 dist/
 *.tsbuildinfo
-data/
+# 只忽略根目錄的 data/（本機備份用），不能影響 public/data/
+/data/
 _incoming/
 public/data/works.backup.json
 *.local
