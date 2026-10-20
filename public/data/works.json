@@ -12,7 +12,8 @@
   "platforms": [
     "Netflix",
     "Steam",
-    "PS5"
+    "PS5",
+    "NS2"
   ],
   "tags": [
     "熱血",
@@ -22,7 +23,9 @@
     "朋友推薦",
     "有難",
     "傷眼",
-    "硬"
+    "硬",
+    "有趣",
+    "音遊"
   ],
   "works": [
     {
@@ -134,6 +137,19 @@
       "status": "want",
       "tags": [
         "熱血"
+      ],
+      "updatedAt": "2026-10-20"
+    },
+    {
+      "id": "w-mvghov7tucfa",
+      "title": "RATATAN",
+      "type": "電玩",
+      "note": "頌唱很洗腦，希望2026有時間打開完",
+      "platform": "NS2",
+      "status": "want",
+      "tags": [
+        "有趣",
+        "音遊"
       ],
       "updatedAt": "2026-10-20"
     }
