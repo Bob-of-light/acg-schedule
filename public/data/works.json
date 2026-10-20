@@ -10,7 +10,8 @@
   ],
   "platforms": [
     "Netflix",
-    "Steam"
+    "Steam",
+    "PS5"
   ],
   "tags": [
     "熱血",
@@ -54,18 +55,13 @@
     },
     {
       "id": "w-sp-1",
-      "title": "超級溫泉大飯店",
-      "titleOriginal": "スーパーポテト",
+      "title": "機機傭兵VI 境界天火",
       "type": "電玩",
-      "platform": "Steam",
+      "platform": "PS5",
       "status": "want",
-      "tags": [
-        "限定",
-        "朋友推薦"
-      ],
-      "note": "老闆說這裡有初代限定版，記一下免得下次找不到。",
-      "url": "",
-      "cover": "",
+      "tags": [],
+      "note": "看起來要重打一次直昇機了",
+      "url": "https://www.playstation.com/zh-hant-tw/games/armored-core-6-fires-of-rubicon/",
       "updatedAt": "2026-10-20"
     },
     {
