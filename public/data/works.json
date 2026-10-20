@@ -5,7 +5,8 @@
     "動畫",
     "電玩",
     "漫畫",
-    "小說"
+    "小說",
+    "模型"
   ],
   "platforms": [
     "Netflix",
@@ -70,7 +71,7 @@
     {
       "id": "w-mvgaj128wqvm",
       "title": "鋼彈君",
-      "type": "動畫",
+      "type": "模型",
       "note": "先做DX版",
       "tags": [],
       "updatedAt": "2026-10-20"
