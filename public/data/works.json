@@ -32,7 +32,8 @@
     "可愛",
     "走格子",
     "正視",
-    "#有興趣"
+    "#有興趣",
+    "已買先玩"
   ],
   "works": [
     {
@@ -56,11 +57,12 @@
       "platform": "PS5",
       "status": "want",
       "tags": [
-        "有難"
+        "有難",
+        "已買先玩"
       ],
       "note": "看起來要重打一次直昇機了",
       "url": "https://www.playstation.com/zh-hant-tw/games/armored-core-6-fires-of-rubicon/",
-      "updatedAt": "2026-10-20"
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "w-mvgaj128wqvm",
